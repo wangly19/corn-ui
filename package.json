@@ -1,0 +1,18 @@
+{
+  "name": "corn-ui",
+  "version": "1.0.0",
+  "description": "corn-ui",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "wangly19",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tarojs/cli": "^3.6.2",
+    "@types/react": "^18.0.28",
+    "typescript": "^4.9.5"
+  }
+}
