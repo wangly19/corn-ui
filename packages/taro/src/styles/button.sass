@@ -1,0 +1,69 @@
+@import './base'
+
+.#{$prefix}
+  &-button
+    cursor: pointer
+    width: max-content
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $white
+
+    &-primary
+      background: $primary-6
+      border-color: $primary-6
+      color: $primary-6
+    &-success
+      background: $success-6
+      border-color: $success-6
+      color: $success-6
+    &-warning
+      background: $warning-6
+      border-color: $warning-6
+      color: $warning-6
+    &-danger
+      background: $danger-6
+      border-color: $danger-6
+      color: $danger-6
+
+    &-solid
+      color: $white
+    &-text
+      background: none
+    &-ghost
+      background: $white
+      border-style: solid
+      border-width: 1PX
+
+    &-block
+      width: 100%
+
+    &-disabled
+      pointer-events: none
+      opacity: .8
+
+    &-round
+      border-radius: 100px
+
+    &-size
+      &-mini
+        height: 48px
+        font-size: $font-size-sm
+        padding-inline: 16px
+      &-small
+        height: 56px
+        font-size: $font-size-md
+        padding-inline: 32px
+      &-medium
+        height: 64px
+        font-size: $font-size-xl
+        padding-inline: 40px
+      &-large
+        height: 72px
+        font-size: $font-size-xl
+        padding-inline: 48px
+      &-max
+        height: 88px
+        padding-inline: 64px
+        font-size: $font-size-2xl
