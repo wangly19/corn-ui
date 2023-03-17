@@ -1,0 +1,77 @@
+@import "./base.sass"
+
+.#{$prefix}
+  &-btn
+    cursor: pointer
+    width: max-content
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $color-background
+    color: $color-text
+    font-size: $font-size-9
+    border-width: 1PX
+    border-style: solid
+    border-radius: $radius-s
+    padding-inline:  24px
+    opacity: 1
+    &-hover
+      opacity: .8
+      transition: .8s
+    &-disabled
+      pointer-events: none
+      cursor: not-allowed
+      opacity: .4
+    &-default
+      background: $color-background
+      color: $color-text
+      border-color: $color-border
+    &-primary
+      background: $color-primary
+      color: $color-primary
+      border-color: $color-primary
+    &-danger
+      background: $color-danger
+      color: $color-danger
+      border-color: $color-danger
+    &-warning
+      background: $color-warning
+      color: $color-warning
+      border-color: $color-warning
+    &-success
+      background: $color-success
+      color: $color-success
+      border-color: $color-success
+    &-solid
+      color: $color-white
+    &-outline
+      background:  $color-background
+    &-none
+      background: transparent
+      border-color: transparent
+    &-block
+      width: 100%
+    &-round
+      border-radius: $radius-c
+    &-size
+      &-large
+        height: 98px
+        font-size: $font-size-10
+      &-medium
+        height: 80px
+        font-size: $font-size-9
+      &-small
+        height: 58px
+        font-size: $font-size-7
+      &-mini
+        height: 53px
+        font-size: $font-size-main
+    &_icon
+      line-height: 1
+      &-left
+        margin-right: 12px
+      &-right
+        margin-left: 12px
+
+
