@@ -1,0 +1,19 @@
+@use "sass:math"
+@import './base'
+
+$row_columns: 12
+
+@for $i from 1 through $row_columns
+  .#{$prefix}-col-span-#{$i}
+    width: math.div($i, $row_columns) * 100%
+  .#{$prefix}-col-offset-#{$i}
+    margin-left: math.div($i, $row_columns) * 100%
+
+.#{$prefix}
+  &-row
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+  &-col
+    box-sizing: border-box
+    height: 100%
